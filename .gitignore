@@ -1,4 +1,5 @@
 env
 .vscode
-
+models
+checkpoint
 scripts/gather.py
