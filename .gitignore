@@ -3,3 +3,4 @@ env
 models
 checkpoint
 scripts/gather.py
+checkpoint_run1.tar

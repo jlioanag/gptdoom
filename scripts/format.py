@@ -15,6 +15,8 @@ with open('data/Lyrics_MFDOOM.json', 'r') as read_file:
 with codecs.open('data/Lyrics_MFDOOM.txt', 'w', encoding='utf8') as f:
     for item in lyrics:
         # if '[' not in item:
-        item.replace('[Instrumental]\n','')
+        for chars in item:  
+            chars.replace('[','')
+            chars.replace(']','')
         item += '\n'
         f.write(item)
